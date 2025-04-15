@@ -1,15 +1,9 @@
 *,
-::after,
-::before {
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html {
-  height: 100%;
-  font-size: 62.5%;
-  scroll-behavior: smooth;
 }
 
 a {
@@ -27,10 +21,18 @@ img {
   object-fit: cover;
 }
 
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  font-size: 62.5%;
+}
+
 body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  font-family: $Martian;
+  background-color: $neutral-0;
 }
 
 main {
@@ -43,7 +45,7 @@ h1 {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1244px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 30px;
