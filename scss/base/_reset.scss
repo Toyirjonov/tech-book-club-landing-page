@@ -31,8 +31,8 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  font-family: $Martian;
-  background-color: $neutral-0;
+  font-family: var(--Martian);
+  background-color: var(--neutral-0);
 }
 
 main {
