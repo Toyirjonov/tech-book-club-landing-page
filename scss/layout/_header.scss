@@ -50,6 +50,7 @@
   @include btn;
   background-color: var(--light-salmon-50);
   margin-bottom: 2rem;
+  width: 343px;
 
   & .hero__button__title {
     font-weight: 600;
@@ -93,7 +94,7 @@
     margin-bottom: 8rem;
   }
 
-  .sitenav {
+  .header_container {
     padding-bottom: 3.2rem;
     padding-top: 3.2rem;
   }
@@ -101,6 +102,10 @@
   .container {
     padding: 0 3.2rem;
   }
+  .hero__container {
+    flex-direction: column;
+  }
+
   .hero__content {
     width: 100%;
     max-width: 100%;

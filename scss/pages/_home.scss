@@ -45,6 +45,7 @@
   background-position: bottom 31px center;
 }
 .book-club__container {
+  flex-direction: column;
   display: flex;
   align-items: center;
 }
@@ -199,7 +200,7 @@
   border-radius: 8px;
 
   &:nth-child(2) {
-    padding: 4rem 2.4rem;
+    padding: 2.4rem;
     width: 100%;
     max-width: 350px;
     background-color: var(--neutral-100);
@@ -327,55 +328,9 @@
   color: var(--neutral-700);
 }
 
-@media screen and (max-width: 1010px) {
-  .hero__container {
-    max-width: 100%;
-    flex-direction: column;
-    align-items: center;
-    gap: 4rem;
-  }
-
-  .grow__container {
-    flex-direction: column;
-    gap: 4rem;
-  }
-
-  .book-club__container {
-    flex-direction: column;
-    align-items: center;
-    gap: 4rem;
-  }
-
-  .reading-journey {
-    display: none;
-  }
-
-  .options__list {
-    flex-wrap: wrap;
-  }
-
-  .options__item:nth-child(2) {
-    padding: 2.4rem;
-    width: 100%;
-    max-width: 286px;
-    background-color: var(--neutral-100);
-    background-image: url("../../images/pattern-glow.svg");
-    background-repeat: no-repeat;
-    background-position: top -202px left -24px;
-  }
-
-  .testemonials__container {
-    align-items: start;
-  }
-
-  .testemonials__caption {
-    text-align: left;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .grow {
-    margin-bottom: 6.7rem;
+    margin-bottom: 8rem;
   }
 
   .grow__container {
@@ -438,11 +393,9 @@
   }
 
   .options__list {
-    // justify-content: space-between;
-    // flex-direction: row;
-    // gap: 0;
-    flex-direction: column;
-    gap: 2.4rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0;
   }
 
   .options__item {
@@ -450,7 +403,150 @@
     &:nth-child(2),
     &:nth-child(3) {
       width: 100%;
-      max-width: 100%;
+      max-width: 340px;
+      height: 358px;
+    }
+
+    &:nth-child(3) {
+      margin-top: 2.4rem;
+    }
+  }
+
+  .testemonials {
+    display: inline-block;
+    margin-bottom: 8rem;
+  }
+
+  .testemonials__container {
+    text-align: left;
+    align-items: start;
+    margin: 0;
+  }
+  .testemonials__caption {
+    text-align: left;
+  }
+
+  .reading-journey {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .grow {
+    margin-bottom: 6.7rem;
+  }
+
+  .grow__container {
+    align-items: start;
+    flex-direction: column-reverse;
+  }
+
+  .grow-image_wrapper {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  .grow__list {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .book-club {
+    background-position: right 82.44px bottom 50.71px;
+    margin-bottom: 8rem;
+  }
+
+  .book-club__container {
+    align-items: start;
+  }
+
+  .book-club__content {
+    margin: 0;
+    max-width: 100%;
+  }
+  .grow {
+    margin-bottom: 8rem;
+  }
+
+  .grow__container {
+    align-items: start;
+    flex-direction: column-reverse;
+  }
+
+  .grow-image_wrapper {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  .grow__list {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .book-club {
+    background-position: right 82.44px bottom 50.71px;
+    margin-bottom: 8rem;
+  }
+
+  .book-club__container {
+    align-items: start;
+  }
+
+  .book-club__content {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .book-club__title {
+    width: 100%;
+    max-width: 534px;
+  }
+
+  .options {
+    margin-bottom: 8rem;
+  }
+
+  .book-club-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .options__container {
+    align-items: start;
+  }
+
+  .options__title {
+    margin-bottom: 4rem;
+  }
+
+  .options__list {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .options__item {
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      width: 100%;
+      max-width: 340px;
+      height: 358px;
     }
 
     &:nth-child(3) {
@@ -464,5 +560,59 @@
 
   .testemonials__container {
     margin: 0;
+  }
+
+  .reading-journey {
+    display: none;
+  }
+  .book-club__title {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .options {
+    margin-bottom: 8rem;
+  }
+
+  .book-club-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .options__container {
+    align-items: start;
+  }
+
+  .options__title {
+    margin-bottom: 2.4rem;
+  }
+
+  .options__list {
+    gap: 2.4rem;
+  }
+
+  .options__item {
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      width: 100%;
+      max-width: 100%;
+      height: 358px;
+      margin: 0;
+    }
+  }
+
+  .testemonials {
+    display: inline-block;
+    margin-bottom: 6.4rem;
+  }
+
+  .testemonials__container {
+    margin: 0;
+  }
+
+  .reading-journey {
+    display: none;
   }
 }
